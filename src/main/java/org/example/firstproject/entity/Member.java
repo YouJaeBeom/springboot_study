@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -12,6 +13,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
+@Getter
 public class Member {
     @Id
     @GeneratedValue
@@ -21,6 +23,9 @@ public class Member {
     @Column
     private String password;
 
+//    public Long getId() {
+//        return id;
+//    }
 //    @Override
 //    public String toString() {
 //        return "Member{" +
